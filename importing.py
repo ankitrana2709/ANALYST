@@ -33,4 +33,19 @@ df= df1.dropna(subset=["price"], axis = 0)
 print(df.head(10))
 
 #saving dataset index false means row names are not written.
-df.to_csv("Autombobile.csv", index=False)
+#df.to_csv("Autombobile.csv", index=False)
+
+#to check data types
+print(df.dtypes)
+
+#for statistical analysis only for numbers
+print(df.describe())
+
+# describe all the columns in "df" 
+print(df.describe(include = "all"))
+
+# for accessing first, third column only of last two rows and statiscal analysis with text as well.
+print(df[['symboling', 'make']].tail(2).describe(include = "all"))
+
+# look at the info of "df"
+#print(df.info())
