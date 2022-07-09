@@ -1,10 +1,10 @@
 import pandas as pd
 # setting a file in a variable
 
-path = "auto_imports.data"
+path = "autos_import.data"
 #creating a dataframe using pandas
 df = pd.read_csv(path)
 
-df.head()
+print(df.head())
 #setting headers
 #df.coloumn = headers
