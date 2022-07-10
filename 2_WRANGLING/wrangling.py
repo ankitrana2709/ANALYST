@@ -155,4 +155,4 @@ df = pd.concat([df, dummy_variable_2], axis=1)
 df.drop('aspiration', axis = 1, inplace=True)
 
 # saving
-df.to_csv('clean_df.csv')
+df.to_csv('clean_df.csv', index=False)
