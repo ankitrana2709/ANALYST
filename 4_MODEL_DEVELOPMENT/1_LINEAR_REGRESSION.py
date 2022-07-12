@@ -1,13 +1,4 @@
-from wsgiref import headers
-import pandas as pd
-import numpy as np
-import matplotlib.pylab as plt
-from sklearn.linear_model import LinearRegression
-# setting a file in a variable
-
-path = "clean.csv"
-#creating a dataframe using pandas with headers
-df = pd.read_csv(path)
+from requirements import plt,sns,pd,np,df, LinearRegression
 
 print(df.head(2))
 lm = LinearRegression()
